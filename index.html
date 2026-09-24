@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rıdvan - Modern Full-Stack web ve Python çözümleri üreten yazılım geliştirici. Projeler, yetenekler, masaüstü araçlar ve iletişim.">
+  <meta name="author" content="Rıdvan">
+  <meta name="keywords" content="Rıdvan, Python Developer, Full-Stack Geliştirici, Web Tasarım, Yazılım Portfolyo">
+  <title>Rıdvan | Full-Stack & Python Yazılım Geliştirici</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Animated Background -->
+  <div class="bg-mesh" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Mouse Cursor Spotlight -->
+  <div id="cursor-spotlight" class="cursor-spotlight" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="main-header">
+    <nav class="nav-pill" aria-label="Ana Menü">
+      <a href="#hero" class="brand-logo" id="brand-logo">
+        <span class="logo-badge">&lt;Dev/&gt;</span>
+        <span>RIDVAN</span>
+      </a>
+
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#hero" class="nav-link active" id="nav-hero-link">Başlangıç</a></li>
+        <li><a href="#skills" class="nav-link" id="nav-skills-link">Yetenekler</a></li>
+        <li><a href="#terminal" class="nav-link" id="nav-terminal-link">Terminal</a></li>
+        <li><a href="#projects" class="nav-link" id="nav-projects-link">Projeler</a></li>
+        <li><a href="#timeline" class="nav-link" id="nav-timeline-link">Deneyim</a></li>
+        <li><a href="#contact" class="nav-link" id="nav-contact-link">İletişim</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn-contact-nav" id="btn-header-contact">İletişime Geç</a>
+        <button class="nav-toggle" id="nav-toggle-btn" aria-label="Menüyü Aç/Kapat">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge" id="hero-status-badge">
+            <span class="status-dot"></span>
+            <span>Yeni Projelere & İş Birliklerine Açık</span>
+          </div>
+
+          <h1 class="hero-title" id="main-heading">
+            Merhaba, Ben <span class="text-gradient">Rıdvan</span>.<br>
+            <span id="typewriter-text" class="text-gradient">Full-Stack Geliştirici</span>
+          </h1>
+
+          <p class="hero-description" id="hero-bio">
+            Fikirleri modern, yüksek performanslı ve estetik dijital ürünlere dönüştürüyorum. 
+            Python ile güçlü backend mimarileri ve masaüstü yazılımlar; JavaScript ve modern web 
+            teknolojileriyle göz alıcı kullanıcı deneyimleri inşa ediyorum.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary" id="btn-hero-projects">
+              <span>Projelerimi Keşfet</span>
+              <span>→</span>
+            </a>
+            <a href="#terminal" class="btn-secondary" id="btn-hero-terminal">
+              <span>⚡ Canlı Terminal</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">Full-Stack</span>
+              <span class="stat-label">Web & API Mimarisi</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">Python</span>
+              <span class="stat-label">Backend & Desktop</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">Modern UI</span>
+              <span class="stat-label">Responsive & Temiz Kod</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <div class="avatar-backdrop"></div>
+            <div class="avatar-frame">
+              <img src="assets/profile.jpg" alt="Rıdvan - Full Stack & Python Geliştirici" class="avatar-img" id="hero-avatar">
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-badge badge-python">
+              <span class="badge-icon">🐍</span>
+              <div>
+                <div class="badge-text-primary">Python Pro</div>
+                <div class="badge-text-sub">Backend & Scripting</div>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-fullstack">
+              <span class="badge-icon">⚡</span>
+              <div>
+                <div class="badge-text-primary">Modern Web</div>
+                <div class="badge-text-sub">HTML, CSS, JS & API</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Yetenek Havuzu</span>
+          <h2 class="section-title">Neler Yapabiliyorum?</h2>
+          <p class="section-subtitle">
+            Güncel teknolojileri kullanarak baştan sona sağlam, ölçeklenebilir ve kullanıcı dostu sistemler geliştiriyorum.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Backend & Python -->
+          <article class="skill-card" id="skill-card-backend">
+            <div class="skill-header">
+              <div class="skill-icon-box">🐍</div>
+              <div>
+                <h3 class="skill-title">Python & Backend</h3>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Güçlü veri akışları, RESTful API'ler, otomasyon botları ve masaüstü yazılımları geliştirme.
+            </p>
+            <div class="skill-tags">
+              <span class="tech-tag">Python 3</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">Tkinter</span>
+              <span class="tech-tag">Automation</span>
+            </div>
+          </article>
+
+          <!-- Frontend & UI -->
+          <article class="skill-card" id="skill-card-frontend">
+            <div class="skill-header">
+              <div class="skill-icon-box">💻</div>
+              <div>
+                <h3 class="skill-title">Modern Frontend</h3>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Modern web standartlarında duyarlı (responsive), akıcı animasyonlara sahip dinamik arayüzler.
+            </p>
+            <div class="skill-tags">
+              <span class="tech-tag">JavaScript (ES6+)</span>
+              <span class="tech-tag">HTML5 & Semantic</span>
+              <span class="tech-tag">Modern CSS3</span>
+              <span class="tech-tag">Glassmorphism</span>
+              <span class="tech-tag">DOM Manipulation</span>
+            </div>
+          </article>
+
+          <!-- Database & DevOps -->
+          <article class="skill-card" id="skill-card-devops">
+            <div class="skill-header">
+              <div class="skill-icon-box">🗄️</div>
+              <div>
+                <h3 class="skill-title">Veri & Entegrasyon</h3>
+              </div>
+            </div>
+            <p class="skill-desc">
+              İlişkisel veritabanı modelleme, veri işleme, üçüncü parti API entegrasyonları ve Git versiyon kontrolü.
+            </p>
+            <div class="skill-tags">
+              <span class="tech-tag">PostgreSQL / SQLite</span>
+              <span class="tech-tag">JSON / REST</span>
+              <span class="tech-tag">Git & GitHub</span>
+              <span class="tech-tag">Data Cleaning</span>
+            </div>
+          </article>
+
+          <!-- AI & System Tools -->
+          <article class="skill-card" id="skill-card-ai">
+            <div class="skill-header">
+              <div class="skill-icon-box">🤖</div>
+              <div>
+                <h3 class="skill-title">AI & Verimlilik</h3>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Yapay zeka modelleriyle entegrasyon, LLM API'leri, iş akışı optimizasyonu ve analitik paneller.
+            </p>
+            <div class="skill-tags">
+              <span class="tech-tag">OpenAI / Gemini API</span>
+              <span class="tech-tag">Prompt Eng.</span>
+              <span class="tech-tag">Data Parsing</span>
+              <span class="tech-tag">System Monitor</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Terminal Playground -->
+    <section class="section terminal-section" id="terminal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">İnteraktif Deneyim</span>
+          <h2 class="section-title">Geliştirici Terminali</h2>
+          <p class="section-subtitle">
+            Aşağıdaki komut satırına komut yazarak ya da hızlı butonlara tıklayarak hakkımda bilgi edinebilirsiniz.
+          </p>
+        </div>
+
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="terminal-title">ridvan@portfolio-terminal ~ bash</div>
+            <div class="terminal-actions-top">
+              <button class="btn-terminal-quick" onclick="runTerminalCommand('skills')">skills</button>
+              <button class="btn-terminal-quick" onclick="runTerminalCommand('projects')">projects</button>
+              <button class="btn-terminal-quick" onclick="runTerminalCommand('about')">about</button>
+              <button class="btn-terminal-quick" onclick="runTerminalCommand('contact')">contact</button>
+              <button class="btn-terminal-quick" onclick="runTerminalCommand('clear')">clear</button>
+            </div>
+          </div>
+
+          <div class="terminal-body" id="terminal-body">
+            <div class="terminal-output" id="terminal-output">
+              <div class="terminal-line system">RIDVAN CLI [Sürüm 1.0.0] - Hoş geldiniz!</div>
+              <div class="terminal-line result">Kullanabileceğiniz komutları listelemek için <span class="highlight">help</span> yazın veya yukarıdaki butonlara tıklayın.</div>
+            </div>
+
+            <div class="terminal-input-row">
+              <span class="terminal-prompt">ridvan@dev:~$</span>
+              <input type="text" id="terminal-input" class="terminal-input" placeholder="Komut yazın (örn: help, skills, hire)..." autocomplete="off" spellcheck="false">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Öne Çıkan Çalışmalar</span>
+          <h2 class="section-title">Geliştirdiğim Projeler</h2>
+          <p class="section-subtitle">
+            Web ve masaüstü ekosisteminde tasarlayıp kodladığım bazı seçkin çalışmalar.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs" id="project-filters">
+          <button class="filter-btn active" data-filter="all">Tüm Projeler</button>
+          <button class="filter-btn" data-filter="web">Full-Stack Web</button>
+          <button class="filter-btn" data-filter="ai">Yapay Zeka & API</button>
+          <button class="filter-btn" data-filter="desktop">Python & Masaüstü</button>
+        </div>
+
+        <div class="projects-grid" id="projects-container">
+          <!-- Project 1: Full-Stack SaaS -->
+          <article class="project-card" data-category="web" id="project-1">
+            <div class="project-thumb">
+              <img src="assets/project1.jpg" alt="Quantum Analytics Web Paneli">
+              <span class="project-badge-float">Full-Stack Web</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Quantum Analytics Dashboard</h3>
+              <p class="project-desc">
+                Kullanıcı aktivitelerini, gelir metriklerini ve performans grafiklerini canlı olarak izleyen, ultra modern koyu tema SaaS yönetim paneli.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Python API</span>
+                <span class="tech-tag">Charts.js</span>
+                <span class="tech-tag">CSS3 Glass</span>
+              </div>
+              <div class="project-footer">
+                <button class="project-link" onclick="openProjectModal('Quantum Analytics Dashboard', 'Full-Stack Web', 'Gerçek zamanlı analitik verilerini görselleştiren bulut tabanlı modern kontrol paneli. Gelişmiş veri filtreleme, dinamik SVG grafikler ve rol tabanlı kullanıcı yetkilendirmesi sunar.', 'JavaScript, Python FastAPI, PostgreSQL, CSS3, WebSockets')">
+                  Detayları Gör →
+                </button>
+                <span class="tech-tag">v2.4 Canlı</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: AI Code Assistant -->
+          <article class="project-card" data-category="ai" id="project-2">
+            <div class="project-thumb">
+              <img src="assets/project2.jpg" alt="NeuroFlow AI Platformu">
+              <span class="project-badge-float">AI & API</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">NeuroFlow AI Developer Suite</h3>
+              <p class="project-desc">
+                Python kod modellerini eğiten, otomatik kod refactoring yapan ve sinir ağı akışlarını görselleştiren yapay zeka asistan platformu.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">PyTorch API</span>
+                <span class="tech-tag">OpenAI</span>
+                <span class="tech-tag">WebSocket</span>
+              </div>
+              <div class="project-footer">
+                <button class="project-link" onclick="openProjectModal('NeuroFlow AI Developer Suite', 'AI & Entegrasyon', 'Yazılımcılar için kod analizi ve otomatik mimari şema çıkarımı sağlayan yapay zeka platformu. REST API entegrasyonu ile IDE uyumlu çalışır.', 'Python, FastAPI, Transformer Models, REST API, Tailwind/CSS')">
+                  Detayları Gör →
+                </button>
+                <span class="tech-tag">Aktif AI</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Desktop Python Suite -->
+          <article class="project-card" data-category="desktop" id="project-3">
+            <div class="project-thumb">
+              <img src="assets/project3.jpg" alt="Hyperion Desktop Suite">
+              <span class="project-badge-float">Python & Masaüstü</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Hyperion Desktop Suite & Calculator</h3>
+              <p class="project-desc">
+                Donanım performans takibi, bilimsel hesap makinesi, matematiksel formül geçmişi ve Python script çalıştırıcısını bir araya getiren masaüstü aracı.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python 3</span>
+                <span class="tech-tag">Tkinter GUI</span>
+                <span class="tech-tag">System API</span>
+                <span class="tech-tag">Math Engine</span>
+              </div>
+              <div class="project-footer">
+                <button class="project-link" onclick="openProjectModal('Hyperion Desktop Suite & Calculator', 'Python Masaüstü', 'Windows ortamında hafif, yüksek performanslı ve modern karanlık temalı masaüstü uygulaması. NumPad uyumu, işlem geçmişi kayıtları ve tek tıkla başlatma destekler.', 'Python 3.13, Tkinter, Multiprocessing, System Monitoring')">
+                  Detayları Gör →
+                </button>
+                <span class="tech-tag">Masaüstü</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="section" id="timeline">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Kariyer Yolculuğu</span>
+          <h2 class="section-title">Gelişim ve Deneyim</h2>
+          <p class="section-subtitle">
+            Yazılım geliştirme serüvenimdeki önemli adımlar ve odaklandığım alanlar.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">2024 - Günümüz</div>
+              <h3 class="timeline-title">Full-Stack & Python Geliştirici</h3>
+              <p class="timeline-desc">
+                Modern web mimarileri, yüksek performanslı Python arka uç servisleri ve interaktif arayüzler üzerine projeler geliştiriyorum.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">2023 - 2024</div>
+              <h3 class="timeline-title">Yapay Zeka & API Entegrasyonları</h3>
+              <p class="timeline-desc">
+                Büyük dil modelleri (LLM), veri kazıma ve otomasyon süreçlerinde özelleştirilmiş Python scriptleri ve API uç noktaları tasarladım.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-date">2022 - 2023</div>
+              <h3 class="timeline-title">Masaüstü & Algoritma Temelleri</h3>
+              <p class="timeline-desc">
+                Python ile algoritma geliştirme, veri yapıları, GUI araçları ve otomasyon yazılımları geliştirerek sağlam bir temel kurdum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Bağlantı Kur</span>
+          <h2 class="section-title">Birlikte Harika Bir Şey İnşa Edelim</h2>
+          <p class="section-subtitle">
+            Yeni bir proje fikriniz mi var veya ekibinize yetenekli bir geliştirici mi arıyorsunuz? Mesaj bırakın!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <a href="mailto:ridvan.dev@gmail.com" class="contact-card" id="contact-email">
+              <div class="contact-icon">✉️</div>
+              <div class="contact-card-text">
+                <h4>E-Posta</h4>
+                <p>ridvan.dev@gmail.com</p>
+              </div>
+            </a>
+
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-card" id="contact-github">
+              <div class="contact-icon">🐙</div>
+              <div class="contact-card-text">
+                <h4>GitHub</h4>
+                <p>github.com/ridvan</p>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-card" id="contact-linkedin">
+              <div class="contact-icon">💼</div>
+              <div class="contact-card-text">
+                <h4>LinkedIn</h4>
+                <p>linkedin.com/in/ridvan-dev</p>
+              </div>
+            </a>
+
+            <div class="contact-card" id="contact-location">
+              <div class="contact-icon">📍</div>
+              <div class="contact-card-text">
+                <h4>Konum</h4>
+                <p>Türkiye (Uzaktan / Remote Çalışma)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Adınız Soyadınız</label>
+                <input type="text" id="form-name" class="form-input" placeholder="Adınızı girin" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">E-Posta Adresiniz</label>
+                <input type="email" id="form-email" class="form-input" placeholder="ornek@alanadi.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Mesajınız</label>
+                <textarea id="form-message" class="form-textarea" placeholder="Projeniz veya iletiniz hakkında kısaca bahsedin..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit" id="btn-submit-message">Mesajı Gönder</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Details Modal Popup -->
+  <div class="modal-overlay" id="project-modal" onclick="closeProjectModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeProjectModal()" aria-label="Kapat">×</button>
+      <span class="project-badge-float" id="modal-category" style="position:static; display:inline-block; margin-bottom:12px;">Web</span>
+      <h3 class="section-title" id="modal-title" style="font-size:1.8rem; margin-bottom:12px;">Proje Başlığı</h3>
+      <p class="modal-desc" id="modal-desc" style="color:var(--text-secondary); margin-bottom:20px; line-height:1.7;">Detaylı açıklama.</p>
+      <h4 style="font-size:0.95rem; margin-bottom:10px; color:var(--text-accent);">Kullanılan Teknolojiler:</h4>
+      <div class="skill-tags" id="modal-tech" style="margin-bottom:24px;"></div>
+      <button class="btn-primary" onclick="closeProjectModal()" style="width:100%; justify-content:center;">Tamam</button>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="alert">
+    <span>✓</span>
+    <span class="toast-msg">Mesajınız başarıyla iletildi!</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-copy">
+        © 2026 <strong>Rıdvan</strong>. Tüm hakları saklıdır. Modern web & Python teknolojileriyle tasarlandı.
+      </div>
+      <div class="footer-socials">
+        <a href="#hero" class="social-btn" title="Başa Dön">↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
