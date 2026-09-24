@@ -641,6 +641,55 @@ body {
   border-color: rgba(56, 189, 248, 0.3);
 }
 
+/* AI & Verimlilik - Custom Purple Theme */
+#skill-card-ai {
+  background: linear-gradient(145deg, rgba(147, 51, 234, 0.16) 0%, rgba(24, 24, 27, 0.8) 100%);
+  border-color: rgba(168, 85, 247, 0.35);
+  box-shadow: 0 10px 30px -5px rgba(147, 51, 234, 0.2), inset 0 1px 1px rgba(216, 180, 254, 0.15);
+}
+
+#skill-card-ai::before {
+  background: linear-gradient(90deg, #9333ea, #c084fc, #e879f9);
+  opacity: 0.9;
+  height: 3px;
+}
+
+#skill-card-ai:hover {
+  transform: translateY(-6px);
+  background: linear-gradient(145deg, rgba(147, 51, 234, 0.28) 0%, rgba(39, 39, 42, 0.9) 100%);
+  border-color: rgba(192, 132, 252, 0.7);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 35px rgba(168, 85, 247, 0.45);
+}
+
+#skill-card-ai:hover::before {
+  opacity: 1;
+}
+
+#skill-card-ai .skill-icon-box {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.25) 0%, rgba(126, 34, 206, 0.35) 100%);
+  border: 1px solid rgba(192, 132, 252, 0.5);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+  filter: drop-shadow(0 2px 8px rgba(168, 85, 247, 0.4));
+}
+
+#skill-card-ai .skill-title {
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(192, 132, 252, 0.4);
+}
+
+#skill-card-ai .tech-tag {
+  background: rgba(147, 51, 234, 0.15);
+  border-color: rgba(168, 85, 247, 0.35);
+  color: #e9d5ff;
+}
+
+#skill-card-ai .tech-tag:hover {
+  background: rgba(168, 85, 247, 0.3);
+  border-color: rgba(216, 180, 254, 0.7);
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.35);
+}
+
 /* Interactive Developer Terminal */
 .terminal-section {
   padding: 60px 0;
